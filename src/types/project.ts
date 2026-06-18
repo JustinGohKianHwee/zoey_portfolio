@@ -1,4 +1,4 @@
-export type ImageLayout = 'full' | 'half' | 'third';
+export type ImageLayout = 'full' | 'half' | 'third' | 'dominant';
 export type ImageType = 'render' | 'plan' | 'section' | 'diagram' | 'process' | 'context' | 'elevation';
 
 export interface ProjectImage {
@@ -7,6 +7,8 @@ export interface ProjectImage {
   caption?: string;
   type: ImageType;
   layout: ImageLayout;
+  annotation?: string;
+  objectFit?: 'cover' | 'contain';
 }
 
 export interface Project {

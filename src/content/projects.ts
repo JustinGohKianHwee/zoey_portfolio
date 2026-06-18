@@ -28,7 +28,9 @@ The project adopts Prefinished Prefabricated Volumetric Construction (PPVC) usin
         alt: 'Site context — Sabah RAMSAR wetlands',
         caption: 'Sabah, Malaysia — RAMSAR-listed wetland landscape',
         type: 'context',
-        layout: 'full',
+        layout: 'half',
+        annotation:
+          'Sabah, Malaysia — a RAMSAR-listed wetland landscape defined by extraordinary biodiversity and indigenous cultural heritage, from the Danum Valley rainforest to the slopes of Mount Kinabalu. The project treats this site not as an obstacle but as a teacher — a model of ecological reciprocity that the architecture must learn from.',
       },
       {
         src: '/images/projects/living-layers/section.png',
@@ -42,6 +44,20 @@ The project adopts Prefinished Prefabricated Volumetric Construction (PPVC) usin
         alt: 'Structural diagram showing PPVC and Mass Engineered Timber system',
         caption: 'Structural diagram — PPVC with Mass Engineered Timber',
         type: 'diagram',
+        layout: 'full',
+      },
+      {
+        src: '/images/projects/living-layers/overall.png',
+        alt: 'Overall view of the retreat',
+        caption: 'Overall view',
+        type: 'render',
+        layout: 'full',
+      },
+      {
+        src: '/images/projects/living-layers/top-view.png',
+        alt: "Bird's eye view of masterplan",
+        caption: "Bird's eye plan",
+        type: 'plan',
         layout: 'half',
       },
       {
@@ -52,18 +68,11 @@ The project adopts Prefinished Prefabricated Volumetric Construction (PPVC) usin
         layout: 'half',
       },
       {
-        src: '/images/projects/living-layers/top-view.png',
-        alt: "Bird's eye view of masterplan",
-        caption: "Bird's eye plan",
-        type: 'plan',
-        layout: 'half',
-      },
-      {
-        src: '/images/projects/living-layers/overall.png',
-        alt: 'Overall view of the retreat',
-        caption: 'Overall view',
+        src: '/images/projects/living-layers/perspective-3.png',
+        alt: 'Shared Layers',
+        caption: 'Shared Layers',
         type: 'render',
-        layout: 'half',
+        layout: 'full',
       },
       {
         src: '/images/projects/living-layers/perspective-1.png',
@@ -73,21 +82,14 @@ The project adopts Prefinished Prefabricated Volumetric Construction (PPVC) usin
         layout: 'half',
       },
       {
-        src: '/images/projects/living-layers/perspective-2.png',
-        alt: 'Shared Layers',
-        caption: 'Shared Layers',
-        type: 'render',
-        layout: 'half',
-      },
-      {
-        src: '/images/projects/living-layers/perspective-3.png',
+        src: '/images/projects/living-layers/perspective-4.png',
         alt: 'Co-Living Apartment',
         caption: 'Co-Living Apartment',
         type: 'render',
         layout: 'half',
       },
       {
-        src: '/images/projects/living-layers/perspective-4.png',
+        src: '/images/projects/living-layers/perspective-5.png',
         alt: 'Harvest Ground',
         caption: 'Harvest Ground',
         type: 'render',
@@ -98,6 +100,53 @@ The project adopts Prefinished Prefabricated Volumetric Construction (PPVC) usin
         alt: 'Liquid Canopy — the fifth programme layer',
         caption: 'Liquid Canopy',
         type: 'render',
+        layout: 'half',
+      },
+    ],
+  },
+
+  {
+    slug: 'beyond-earth',
+    title: 'Beyond Earth',
+    subtitle: 'Seven-Storey Office Building',
+    year: '2025',
+    course: 'AR5321 Advanced Architectural Integration',
+    institution: 'National University of Singapore',
+    location: 'Darmstadt, Germany',
+    typology: 'Office',
+    collaborators: 'Group project',
+    featured: true,
+    order: 2,
+    heroImage: '/images/projects/beyond-earth/cover.png',
+    thumbnailImage: '/images/projects/beyond-earth/cover.png',
+    concept:
+      'Letting the material intelligence of the earth define the building\'s climate response — rammed earth and mass timber as passive thermal strategy.',
+    overview: `Beyond Earth is a seven-storey office building designed for Darmstadt, Germany, developed as part of an Advanced Architectural Integration studio at NUS. The project investigates how vernacular materials — specifically rammed earth and mass engineered timber — can be redeployed in a contemporary office context to address the thermal and structural demands of a central European climate.
+
+Rammed earth walls provide thermal mass: absorbing solar heat during the day and releasing it slowly at night, substantially reducing mechanical heating and cooling loads. The structural integration of mass timber with the earthen wall system is explored through three system diagrams, which document the material logic from structural bay to facade panel to building section.
+
+This project was developed as a group collaboration, with a focus on passive environmental strategy and facade material integration.`,
+    tags: ['office', 'rammed-earth', 'mass-timber', 'passive', 'germany'],
+    images: [
+      {
+        src: '/images/projects/beyond-earth/diagram-1.png',
+        alt: 'Material and structural system diagram',
+        caption: 'Material and structural system',
+        type: 'diagram',
+        layout: 'full',
+      },
+      {
+        src: '/images/projects/beyond-earth/diagram-2.png',
+        alt: 'Environmental strategy diagram',
+        caption: 'Environmental strategy',
+        type: 'diagram',
+        layout: 'full',
+      },
+      {
+        src: '/images/projects/beyond-earth/diagram-3.png',
+        alt: 'Facade integration diagram',
+        caption: 'Facade integration',
+        type: 'diagram',
         layout: 'full',
       },
     ],
@@ -113,8 +162,8 @@ The project adopts Prefinished Prefabricated Volumetric Construction (PPVC) usin
     location: 'Gardens by the Bay, Singapore',
     typology: 'Cultural Centre',
     featured: true,
-    order: 2,
-    heroImage: '/images/projects/windwave/cover.png',
+    order: 3,
+    heroImage: '/images/projects/windwave/axo.png',
     thumbnailImage: '/images/projects/windwave/cover.png',
     concept:
       'Form derived from the intelligence of natural aerodynamics — wind not as constraint, but as architect.',
@@ -126,11 +175,22 @@ The spatial organisation flows from the section — the wind-driven envelope geo
     tags: ['cultural', 'parametric', 'wind', 'cfd', 'singapore'],
     images: [
       {
+        src: '/images/projects/windwave/cover.png',
+        alt: 'Windwave — exterior view',
+        caption: '',
+        type: 'render',
+        layout: 'half',
+        annotation:
+          'Windwave is an arts and cultural centre sited at Gardens by the Bay, Singapore, designed from the aerodynamic logic of wind. The project begins with a natural system: the feather morphology of birds, and how individual feather elements negotiate airflow through overlapping geometry and variable surface angles.',
+      },
+      {
         src: '/images/projects/windwave/bird-morpho.png',
         alt: 'Bird feather morphology study — formal derivation sequence',
-        caption: 'Bird feather morphology — formal derivation sequence',
+        caption: 'Bird feather morphology — formal derivation',
         type: 'process',
-        layout: 'third',
+        layout: 'half',
+        annotation:
+          'Bird feather morphology study: each feather\'s overlapping structure negotiates airflow through variable surface angles, providing lift and directional control. This aerodynamic logic — studied across five formal iterations — becomes the generative principle for the building\'s envelope geometry.',
       },
       {
         src: '/images/projects/windwave/bird-morpho-2.png',
@@ -207,8 +267,8 @@ The spatial organisation flows from the section — the wind-driven envelope geo
     institution: 'Hanyang University (NUS Exchange)',
     location: 'Seochon, Seoul, South Korea',
     typology: 'Cultural Library',
-    featured: true,
-    order: 3,
+    featured: false,
+    order: 4,
     heroImage: '/images/projects/boundless-horizons/perspective-1.png',
     thumbnailImage: '/images/projects/boundless-horizons/perspective-1.png',
     concept:
@@ -226,6 +286,34 @@ Four floor plans document the spatial layering from public street level through 
         caption: 'Axonometric overview',
         type: 'render',
         layout: 'full',
+      },
+      {
+        src: '/images/projects/boundless-horizons/perspective-2.png',
+        alt: 'Courtyard',
+        caption: 'Courtyard',
+        type: 'render',
+        layout: 'half',
+      },
+      {
+        src: '/images/projects/boundless-horizons/perspective-3.png',
+        alt: 'Library interior',
+        caption: 'Library interior',
+        type: 'render',
+        layout: 'half',
+      },
+      {
+        src: '/images/projects/boundless-horizons/perspective-4.png',
+        alt: 'Pottery workshop — ground floor',
+        caption: 'Pottery workshop',
+        type: 'render',
+        layout: 'half',
+      },
+      {
+        src: '/images/projects/boundless-horizons/perspective-5.png',
+        alt: 'Reading room — elevated level',
+        caption: 'Reading room',
+        type: 'render',
+        layout: 'half',
       },
       {
         src: '/images/projects/boundless-horizons/first-fp.jpg',
@@ -269,34 +357,6 @@ Four floor plans document the spatial layering from public street level through 
         type: 'elevation',
         layout: 'half',
       },
-      {
-        src: '/images/projects/boundless-horizons/perspective-2.png',
-        alt: 'Courtyard',
-        caption: 'Courtyard',
-        type: 'render',
-        layout: 'half',
-      },
-      {
-        src: '/images/projects/boundless-horizons/perspective-3.png',
-        alt: 'Library interior',
-        caption: 'Library interior',
-        type: 'render',
-        layout: 'half',
-      },
-      {
-        src: '/images/projects/boundless-horizons/perspective-4.png',
-        alt: 'Pottery workshop — ground floor',
-        caption: 'Pottery workshop',
-        type: 'render',
-        layout: 'half',
-      },
-      {
-        src: '/images/projects/boundless-horizons/perspective-5.png',
-        alt: 'Reading room — elevated level',
-        caption: 'Reading room',
-        type: 'render',
-        layout: 'half',
-      },
     ],
   },
 
@@ -311,7 +371,7 @@ Four floor plans document the spatial layering from public street level through 
     typology: 'Educational Retrofit',
     collaborators: 'Ng Guang Ze',
     featured: false,
-    order: 4,
+    order: 5,
     heroImage: '/images/projects/dynamicscape/cover.png',
     thumbnailImage: '/images/projects/dynamicscape/cover.png',
     concept:
@@ -359,16 +419,16 @@ The result is an envelope layer that responds to Singapore's equatorial climate 
         layout: 'half',
       },
       {
-        src: '/images/projects/dynamicscape/diagram-2.png',
-        alt: 'Panel configuration strategy diagram',
-        caption: 'Panel configuration strategy',
+        src: '/images/projects/dynamicscape/diagram.png',
+        alt: 'Facade overview diagram',
+        caption: 'Facade overview',
         type: 'diagram',
         layout: 'half',
       },
       {
-        src: '/images/projects/dynamicscape/diagram.png',
-        alt: 'Facade overview diagram',
-        caption: 'Facade overview',
+        src: '/images/projects/dynamicscape/diagram-2.png',
+        alt: 'Panel configuration strategy diagram',
+        caption: 'Panel configuration strategy',
         type: 'diagram',
         layout: 'full',
       },
@@ -385,7 +445,7 @@ The result is an envelope layer that responds to Singapore's equatorial climate 
     location: 'Singapore',
     typology: 'Housing',
     featured: false,
-    order: 5,
+    order: 6,
     heroImage: '/images/projects/diverging-paths/cover.jpg',
     thumbnailImage: '/images/projects/diverging-paths/cover.jpg',
     concept:
@@ -403,6 +463,7 @@ The ground floor plan and emotive section document the building's spatial narrat
         caption: 'Concept context',
         type: 'context',
         layout: 'half',
+        objectFit: 'contain',
       },
       {
         src: '/images/projects/diverging-paths/intro-2.jpg',
@@ -410,6 +471,7 @@ The ground floor plan and emotive section document the building's spatial narrat
         caption: '',
         type: 'context',
         layout: 'half',
+        objectFit: 'contain',
       },
       {
         src: '/images/projects/diverging-paths/massing-aggregation.jpg',
@@ -423,7 +485,7 @@ The ground floor plan and emotive section document the building's spatial narrat
         alt: 'Exploded massing diagram',
         caption: 'Exploded massing',
         type: 'diagram',
-        layout: 'full',
+        layout: 'dominant',
       },
       {
         src: '/images/projects/diverging-paths/ground-floor-plan.jpg',
@@ -445,53 +507,6 @@ The ground floor plan and emotive section document the building's spatial narrat
         caption: 'Emotive section',
         type: 'section',
         layout: 'full',
-      },
-    ],
-  },
-
-  {
-    slug: 'beyond-earth',
-    title: 'Beyond Earth',
-    subtitle: 'Seven-Storey Office Building',
-    year: '2025',
-    course: 'AR5321 Advanced Architectural Integration',
-    institution: 'National University of Singapore',
-    location: 'Darmstadt, Germany',
-    typology: 'Office',
-    collaborators: 'Group project',
-    featured: false,
-    order: 6,
-    heroImage: '/images/projects/beyond-earth/cover.png',
-    thumbnailImage: '/images/projects/beyond-earth/cover.png',
-    concept:
-      'Letting the material intelligence of the earth define the building\'s climate response — rammed earth and mass timber as passive thermal strategy.',
-    overview: `Beyond Earth is a seven-storey office building designed for Darmstadt, Germany, developed as part of an Advanced Architectural Integration studio at NUS. The project investigates how vernacular materials — specifically rammed earth and mass engineered timber — can be redeployed in a contemporary office context to address the thermal and structural demands of a central European climate.
-
-Rammed earth walls provide thermal mass: absorbing solar heat during the day and releasing it slowly at night, substantially reducing mechanical heating and cooling loads. The structural integration of mass timber with the earthen wall system is explored through three system diagrams, which document the material logic from structural bay to facade panel to building section.
-
-This project was developed as a group collaboration, with a focus on passive environmental strategy and facade material integration.`,
-    tags: ['office', 'rammed-earth', 'mass-timber', 'passive', 'germany'],
-    images: [
-      {
-        src: '/images/projects/beyond-earth/diagram-1.png',
-        alt: 'Material and structural system diagram',
-        caption: 'Material and structural system',
-        type: 'diagram',
-        layout: 'third',
-      },
-      {
-        src: '/images/projects/beyond-earth/diagram-2.png',
-        alt: 'Environmental strategy diagram',
-        caption: 'Environmental strategy',
-        type: 'diagram',
-        layout: 'third',
-      },
-      {
-        src: '/images/projects/beyond-earth/diagram-3.png',
-        alt: 'Facade integration diagram',
-        caption: 'Facade integration',
-        type: 'diagram',
-        layout: 'third',
       },
     ],
   },
