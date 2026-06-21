@@ -44,11 +44,23 @@ export function ProjectPageContent({ project, next }: Props) {
                 <MetaItem label="Year" value={project.year} />
                 <MetaItem label="Location" value={project.location} />
                 <MetaItem label="Course" value={project.course} />
-                <MetaItem label="Institution" value={project.institution} />
+                {project.professor && (
+                  <MetaItem label="Professor" value={project.professor} />
+                )}
                 {project.collaborators && (
                   <MetaItem label="With" value={project.collaborators} />
                 )}
               </dl>
+              {project.reportLink && (
+                <a
+                  href={project.reportLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-5 font-sans text-xs text-stone border-b border-stone/40 pb-px hover:text-ink hover:border-ink transition-colors duration-300"
+                >
+                  Download Thesis Report ↓
+                </a>
+              )}
             </header>
           </FadeIn>
 
@@ -175,6 +187,34 @@ function ImageBlock({ image, onOpen }: ImageBlockProps) {
             <p className="font-sans text-sm text-stone leading-relaxed">{image.annotation}</p>
           </div>
         </div>
+      </FadeIn>
+    );
+  }
+
+  if (image.naturalRatio) {
+    return (
+      <FadeIn className={colSpan}>
+        <figure>
+          <div
+            className="bg-surface w-full cursor-pointer"
+            onClick={() => onOpen(image.src, image.alt)}
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={2000}
+              height={1500}
+              style={{ width: '100%', height: 'auto' }}
+              sizes="(max-width: 1200px) 100vw, 1200px"
+              className="block"
+            />
+          </div>
+          {image.caption && (
+            <figcaption className="mt-2 font-sans text-xs text-muted leading-snug">
+              {image.caption}
+            </figcaption>
+          )}
+        </figure>
       </FadeIn>
     );
   }

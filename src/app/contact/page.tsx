@@ -33,10 +33,10 @@ export default function ContactPage() {
                 Email
               </p>
               <a
-                href="mailto:e0774841@u.nus.edu"
+                href="mailto:zoeysze@gmail.com"
                 className="font-sans text-sm text-ink hover:text-accent transition-colors duration-300"
               >
-                e0774841@u.nus.edu
+                zoeysze@gmail.com
               </a>
             </div>
 
@@ -53,9 +53,14 @@ export default function ContactPage() {
               <p className="font-sans text-[0.625rem] uppercase tracking-widest text-muted mb-1.5">
                 CV / Resume
               </p>
-              <p className="font-sans text-sm text-stone">
-                [needs Zoey input — PDF CV download link]
-              </p>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-sm text-stone border-b border-stone/40 pb-px hover:text-ink hover:border-ink transition-colors duration-300"
+              >
+                Download CV ↓
+              </a>
             </div>
 
             <div>

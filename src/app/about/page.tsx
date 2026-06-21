@@ -35,7 +35,7 @@ export default function AboutPage() {
               Singapore.
             </p>
             <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
-              Across seven projects spanning 2022 to 2025, her practice has engaged with
+              Across eight projects spanning 2022 to 2026, her practice has engaged with
               questions of climate responsiveness, material intelligence, and the social
               dimension of architecture — how buildings can sustain not just their
               occupants, but the wider ecologies and communities they inhabit.
@@ -73,10 +73,25 @@ export default function AboutPage() {
             </div>
             <div>
               <dt className="font-sans text-[0.625rem] uppercase tracking-widest text-muted mb-1.5">
+                Experience
+              </dt>
+              <dd className="font-sans text-sm text-stone leading-relaxed">
+                Design Trainee — TBG Interior Design<br />
+                Jun–Aug 2025<br />
+                <br />
+                Architecture Intern — IX Architects<br />
+                Jun–Dec 2024
+              </dd>
+            </div>
+            <div>
+              <dt className="font-sans text-[0.625rem] uppercase tracking-widest text-muted mb-1.5">
                 Skills
               </dt>
               <dd className="font-sans text-sm text-stone leading-relaxed">
-                [needs Zoey input — software and technical skills]
+                Rhino 3D · ArchiCAD · AutoCAD<br />
+                Enscape · Twinmotion<br />
+                Photoshop · Illustrator · InDesign<br />
+                3D Printing · Laser Cutting
               </dd>
             </div>
             <div>
@@ -85,10 +100,25 @@ export default function AboutPage() {
               </dt>
               <dd className="font-sans text-sm text-stone">
                 <a
-                  href="mailto:e0774841@u.nus.edu"
+                  href="mailto:zoeysze@gmail.com"
                   className="hover:text-ink transition-colors duration-300"
                 >
-                  e0774841@u.nus.edu
+                  zoeysze@gmail.com
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="font-sans text-[0.625rem] uppercase tracking-widest text-muted mb-1.5">
+                CV / Resume
+              </dt>
+              <dd className="font-sans text-sm text-stone">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-b border-stone/40 pb-px hover:text-ink hover:border-ink transition-colors duration-300"
+                >
+                  Download CV ↓
                 </a>
               </dd>
             </div>
