@@ -44,9 +44,6 @@ export function ProjectPageContent({ project, next }: Props) {
                 <MetaItem label="Year" value={project.year} />
                 <MetaItem label="Location" value={project.location} />
                 <MetaItem label="Course" value={project.course} />
-                {project.professor && (
-                  <MetaItem label="Professor" value={project.professor} />
-                )}
                 {project.collaborators && (
                   <MetaItem label="With" value={project.collaborators} />
                 )}

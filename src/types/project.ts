@@ -22,7 +22,6 @@ export interface Project {
   location: string;
   typology: string;
   collaborators?: string;
-  professor?: string;
   reportLink?: string;
   featured: boolean;
   order: number;
