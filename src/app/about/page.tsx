@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllProjects } from '@/lib/projects';
 import { FadeIn } from '@/components/ui/FadeIn';
@@ -23,28 +24,41 @@ export default function AboutPage() {
           </h1>
         </FadeIn>
 
-        {/* Bio */}
+        {/* Bio + portrait */}
         <FadeIn delay={0.05}>
-          <div className="space-y-4 mb-12 md:mb-14">
-            <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
-              Sze Zo Ey is an architecture graduate with experience in both architectural
-              and interior design practice, involved in projects from concept development to
-              detailed design coordination. She has developed an understanding of how spatial
-              ideas translate into built form, with attention to materiality, light,
-              proportion, and user experience.
-            </p>
-            <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
-              Her design approach focuses on community-centred environments that prioritise
-              human well-being, fostering interaction, inclusivity, and meaningful everyday
-              experiences. She views architecture as part of wider social and ecological
-              systems that evolve with their users.
-            </p>
-            <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
-              Sustainability and experiential quality are key drivers in her work, guiding
-              both conceptual and design decisions. Overall, she is interested in creating
-              thoughtful, context-sensitive architecture that enhances everyday life through
-              human-centred design.
-            </p>
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start mb-12 md:mb-14">
+            <figure className="order-1 md:order-2 w-full max-w-[15rem] mx-auto md:mx-0 md:w-[16rem] md:shrink-0">
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface">
+                <Image
+                  src="/images/zoey-portrait.png"
+                  alt="Sze Zo Ey"
+                  fill
+                  sizes="(max-width: 768px) 240px, 256px"
+                  className="object-cover"
+                />
+              </div>
+            </figure>
+            <div className="order-2 md:order-1 md:flex-1 space-y-4">
+              <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
+                Sze Zo Ey is an architecture graduate with experience in both architectural
+                and interior design practice, involved in projects from concept development to
+                detailed design coordination. She has developed an understanding of how spatial
+                ideas translate into built form, with attention to materiality, light,
+                proportion, and user experience.
+              </p>
+              <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
+                Her design approach focuses on community-centred environments that prioritise
+                human well-being, fostering interaction, inclusivity, and meaningful everyday
+                experiences. She views architecture as part of wider social and ecological
+                systems that evolve with their users.
+              </p>
+              <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
+                Sustainability and experiential quality are key drivers in her work, guiding
+                both conceptual and design decisions. Overall, she is interested in creating
+                thoughtful, context-sensitive architecture that enhances everyday life through
+                human-centred design.
+              </p>
+            </div>
           </div>
         </FadeIn>
 

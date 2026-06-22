@@ -24,8 +24,8 @@ export default function HomePage() {
         </FadeIn>
         <FadeIn delay={0.16}>
           <p className="font-sans text-sm text-stone mt-4 max-w-prose leading-relaxed">
-            Architectural designer focused on regenerative systems, performative structures,
-            and contextual spatial thinking.
+            Architecture designer passionate about creating community-centred environments
+            that promote human well-being and environmental sustainability.
           </p>
         </FadeIn>
       </section>
@@ -78,8 +78,7 @@ export default function HomePage() {
                 Sze Zo Ey is an architecture graduate from the National University of
                 Singapore, holding a Bachelor of Arts (Architecture) and a Master of
                 Architecture. Her work spans regenerative design, adaptive environmental
-                systems, and contextual spatial storytelling — from tropical wetlands in
-                Sabah to historic alleyways in Seoul.
+                systems.
               </p>
               <Link
                 href="/about"
