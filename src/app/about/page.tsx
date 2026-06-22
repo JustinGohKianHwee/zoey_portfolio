@@ -114,9 +114,10 @@ export default function AboutPage() {
               </dt>
               <dd className="font-sans text-sm text-stone">
                 <a
-                  href="/resume.pdf"
+                  href="/Sze_Zo_Ey_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  download="Sze Zo Ey_Resume.pdf"
                   className="border-b border-stone/40 pb-px hover:text-ink hover:border-ink transition-colors duration-300"
                 >
                   Download CV ↓

@@ -46,6 +46,7 @@ export const projects: Project[] = [
         caption: 'The gardens',
         type: 'render',
         layout: 'full',
+        naturalRatio: true,
       },
       {
         src: '/images/projects/reharvest/spatial-configuration.png',
