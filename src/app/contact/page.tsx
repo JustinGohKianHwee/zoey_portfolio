@@ -42,15 +42,6 @@ export default function ContactPage() {
 
             <div>
               <p className="font-sans text-[0.625rem] uppercase tracking-widest text-muted mb-1.5">
-                LinkedIn
-              </p>
-              <p className="font-sans text-sm text-stone">
-                [needs Zoey input — LinkedIn profile URL]
-              </p>
-            </div>
-
-            <div>
-              <p className="font-sans text-[0.625rem] uppercase tracking-widest text-muted mb-1.5">
                 CV / Resume
               </p>
               <a

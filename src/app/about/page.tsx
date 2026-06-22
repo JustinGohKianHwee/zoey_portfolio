@@ -27,22 +27,23 @@ export default function AboutPage() {
         <FadeIn delay={0.05}>
           <div className="space-y-4 mb-12 md:mb-14">
             <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
-              Sze Zo Ey is an architecture graduate from the National University of
-              Singapore, holding a Bachelor of Arts (Architecture) and a Master of
-              Architecture. Her work explores the intersection of ecological systems,
-              performative structures, and contextual spatial design — from regenerative
-              co-living retreats in Malaysia to wind-harvesting cultural centres in
-              Singapore.
+              Sze Zo Ey is an architecture graduate with experience in both architectural
+              and interior design practice, involved in projects from concept development to
+              detailed design coordination. She has developed an understanding of how spatial
+              ideas translate into built form, with attention to materiality, light,
+              proportion, and user experience.
             </p>
             <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
-              Across eight projects spanning 2022 to 2026, her practice has engaged with
-              questions of climate responsiveness, material intelligence, and the social
-              dimension of architecture — how buildings can sustain not just their
-              occupants, but the wider ecologies and communities they inhabit.
+              Her design approach focuses on community-centred environments that prioritise
+              human well-being, fostering interaction, inclusivity, and meaningful everyday
+              experiences. She views architecture as part of wider social and ecological
+              systems that evolve with their users.
             </p>
             <p className="font-sans text-[0.9375rem] text-stone leading-relaxed">
-              [needs Zoey input — personal statement, design philosophy, interests, and any
-              other biographical details she would like included]
+              Sustainability and experiential quality are key drivers in her work, guiding
+              both conceptual and design decisions. Overall, she is interested in creating
+              thoughtful, context-sensitive architecture that enhances everyday life through
+              human-centred design.
             </p>
           </div>
         </FadeIn>

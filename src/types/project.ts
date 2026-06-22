@@ -22,7 +22,9 @@ export interface Project {
   location: string;
   typology: string;
   collaborators?: string;
+  advisor?: string;
   reportLink?: string;
+  reportLabel?: string;
   featured: boolean;
   order: number;
   heroImage?: string;

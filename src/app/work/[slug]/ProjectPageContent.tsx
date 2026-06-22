@@ -44,6 +44,9 @@ export function ProjectPageContent({ project, next }: Props) {
                 <MetaItem label="Year" value={project.year} />
                 <MetaItem label="Location" value={project.location} />
                 <MetaItem label="Course" value={project.course} />
+                {project.advisor && (
+                  <MetaItem label="Thesis Advisor" value={project.advisor} />
+                )}
                 {project.collaborators && (
                   <MetaItem label="With" value={project.collaborators} />
                 )}
@@ -55,7 +58,7 @@ export function ProjectPageContent({ project, next }: Props) {
                   rel="noopener noreferrer"
                   className="inline-block mt-5 font-sans text-xs text-stone border-b border-stone/40 pb-px hover:text-ink hover:border-ink transition-colors duration-300"
                 >
-                  Download Thesis Report ↓
+                  {project.reportLabel ?? 'Download Report'} ↓
                 </a>
               )}
             </header>
