@@ -514,7 +514,6 @@ Simultaneously, daylighting and indoor illuminance levels were evaluated across 
     institution: 'National University of Singapore',
     location: 'Singapore CBD',
     typology: 'Research',
-    collaborators: 'Group project',
     featured: false,
     order: 7,
     thumbnailImage: '/images/projects/urban-wind/cover.png',
