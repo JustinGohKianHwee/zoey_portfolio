@@ -505,4 +505,81 @@ Simultaneously, daylighting and indoor illuminance levels were evaluated across 
     ],
   },
 
+  {
+    slug: 'urban-wind',
+    title: 'Integrated Urban Wind Environment',
+    subtitle: 'Urban Morphology and Wind Permeability, Singapore CBD',
+    year: '2025',
+    course: 'AR5953B',
+    institution: 'National University of Singapore',
+    location: 'Singapore CBD',
+    typology: 'Research',
+    collaborators: 'Group project',
+    featured: false,
+    order: 7,
+    thumbnailImage: '/images/projects/urban-wind/cover.png',
+    researchProject: true,
+    sections: [
+      {
+        heading: 'Group Report',
+        reportLink: '/urban-wind-group-report.pdf',
+        reportLabel: 'Group Report (PDF)',
+        body: `The objectives of this report are centered on understanding and improving the urban wind environment of Singapore's CBD through a morphological approach. Our study aims to establish the relationship between urban morphology and wind permeability, diagnose ventilation deficiencies, and propose data-driven planning strategies such as identifying potential air paths within the urban fabric. The three objectives are: understanding regional and local aerodynamic processes influencing Singapore's urban wind environment, evaluating appropriate modelling methods for urban wind analysis, identifying wind stagnation zones and air path blockages within the CBD.`,
+      },
+      {
+        heading: 'Individual Report',
+        reportLink: '/urban-wind-individual-report.pdf',
+        reportLabel: 'Individual Report (PDF)',
+        body: `Research Topic: Building Design for Better Urban Wind Environment
+
+Using the identified NE and SSW wind corridors as a guiding framework, the report focuses on locating an obstructive building and testing how its modification can restore or enhance natural ventilation. Key concepts referenced in this analysis include wind corridors, obstruction zone, and porosity. The methodology involves selecting a target building within Singapore's CBD, analysing CFD across multiple plans, sections and elevations, and iteratively redesigning its massing to reduce wind blockage and align more effectively with the dominant wind paths.`,
+      },
+    ],
+    tags: ['research', 'urban-wind', 'cfd', 'morphology', 'singapore'],
+    images: [
+      { src: '/images/projects/urban-wind/page-1.jpg', alt: 'Urban wind CFD analysis 1', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+      { src: '/images/projects/urban-wind/page-2.jpg', alt: 'Urban wind CFD analysis 2', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+      { src: '/images/projects/urban-wind/page-3.jpg', alt: 'Urban wind CFD analysis 3', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+      { src: '/images/projects/urban-wind/page-5.jpg', alt: 'Urban wind CFD analysis 4', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+      { src: '/images/projects/urban-wind/page-6.jpg', alt: 'Urban wind CFD analysis 5', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+      { src: '/images/projects/urban-wind/page-7.jpg', alt: 'Urban wind CFD analysis 6', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+      { src: '/images/projects/urban-wind/page-8.jpg', alt: 'Urban wind CFD analysis 7', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+      { src: '/images/projects/urban-wind/page-9.jpg', alt: 'Urban wind CFD analysis 8', caption: '', type: 'diagram', layout: 'half', objectFit: 'contain' },
+    ],
+  },
+
+  {
+    slug: 'participatory-design',
+    title: 'The Gambas Link',
+    subtitle: 'Community-Led Public Space, Gambas',
+    year: '2025',
+    course: 'AR5952A Participatory Design',
+    institution: 'National University of Singapore',
+    location: 'Gambas, Singapore',
+    typology: 'Participatory Design',
+    collaborators: 'Group project',
+    featured: false,
+    order: 8,
+    thumbnailImage: '/images/projects/participatory-design/poster.jpg',
+    researchProject: true,
+    sections: [
+      {
+        body: `This project focuses on using participatory design as an approach where architects work directly with local residents to design public spaces. Instead of imposing a design from the top down, our group created a framework to engage the community, listen to their needs, and understand the unique demographics of the neighborhood.
+
+Through community workshops, interviews, and observations of daily routines, we gathered real feedback from the people who will actually use the space. We translated these insights into specific design features, ensuring the final proposal includes accessible spaces for all generations, from children to the elderly. The result is an adaptive design that reflects the community's identity and encourages long-term local ownership.`,
+      },
+    ],
+    tags: ['participatory-design', 'community', 'public-space', 'engagement', 'singapore'],
+    images: [
+      {
+        src: '/images/projects/participatory-design/poster.jpg',
+        alt: 'The Gambas Link — group poster',
+        caption: 'Project poster',
+        type: 'diagram',
+        layout: 'full',
+        naturalRatio: true,
+      },
+    ],
+  },
+
 ];

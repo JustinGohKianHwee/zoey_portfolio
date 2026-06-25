@@ -30,7 +30,7 @@ export function ProjectPageContent({ project, next }: Props) {
         </div>
       )}
 
-      <article>
+      <article className={project.heroImage ? '' : 'pt-28 md:pt-36'}>
         <div className="max-w-content mx-auto px-6 md:px-10">
 
           {/* Title block */}
@@ -65,27 +65,72 @@ export function ProjectPageContent({ project, next }: Props) {
           </FadeIn>
 
           {/* Concept pull quote */}
-          <FadeIn delay={0.05}>
-            <blockquote className="my-12 md:my-16 pl-5 border-l-[2px] border-accent">
-              <p className="font-serif text-xl md:text-[1.375rem] text-ink italic font-normal leading-relaxed max-w-[46rem]">
-                {project.concept}
-              </p>
-            </blockquote>
-          </FadeIn>
+          {project.concept && (
+            <FadeIn delay={0.05}>
+              <blockquote className="my-12 md:my-16 pl-5 border-l-[2px] border-accent">
+                <p className="font-serif text-xl md:text-[1.375rem] text-ink italic font-normal leading-relaxed max-w-[46rem]">
+                  {project.concept}
+                </p>
+              </blockquote>
+            </FadeIn>
+          )}
 
           {/* Overview */}
-          <FadeIn>
-            <div className="mb-14 md:mb-18 max-w-prose">
-              {project.overview.split('\n\n').map((paragraph, i) => (
-                <p
-                  key={i}
-                  className={`font-sans text-[0.9375rem] text-stone leading-relaxed${i > 0 ? ' mt-4' : ''}`}
-                >
-                  {paragraph}
-                </p>
+          {project.overview && (
+            <FadeIn>
+              <div className="mb-14 md:mb-18 max-w-prose">
+                {project.overview.split('\n\n').map((paragraph, i) => (
+                  <p
+                    key={i}
+                    className={`font-sans text-[0.9375rem] text-stone leading-relaxed${i > 0 ? ' mt-4' : ''}`}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </FadeIn>
+          )}
+
+          {/* Writeup sections — research/engagement projects (each may carry a PDF) */}
+          {project.sections && project.sections.length > 0 && (
+            <div className="mt-12 md:mt-16 mb-14 md:mb-18">
+              {project.sections.map((section, i) => (
+                <FadeIn key={i}>
+                  <section
+                    className={
+                      i < project.sections!.length - 1 ? 'mb-12 md:mb-14' : ''
+                    }
+                  >
+                    {section.heading && (
+                      <h2 className="font-sans text-[0.625rem] uppercase tracking-widest text-muted mb-4">
+                        {section.heading}
+                      </h2>
+                    )}
+                    {section.reportLink && (
+                      <a
+                        href={section.reportLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mb-5 font-sans text-xs text-stone border-b border-stone/40 pb-px hover:text-ink hover:border-ink transition-colors duration-300"
+                      >
+                        {section.reportLabel ?? 'Download Report'} ↓
+                      </a>
+                    )}
+                    <div className="max-w-prose">
+                      {section.body.split('\n\n').map((paragraph, j) => (
+                        <p
+                          key={j}
+                          className={`font-sans text-[0.9375rem] text-stone leading-relaxed${j > 0 ? ' mt-4' : ''}`}
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </section>
+                </FadeIn>
               ))}
             </div>
-          </FadeIn>
+          )}
         </div>
 
         {/* Image grid — full content width */}

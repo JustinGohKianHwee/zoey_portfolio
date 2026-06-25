@@ -16,7 +16,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (!project) return {};
   return {
     title: project.title,
-    description: project.concept,
+    description: project.concept ?? project.subtitle,
   };
 }
 
